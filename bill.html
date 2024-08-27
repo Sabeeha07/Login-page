@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bill Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/8620154e67.js"
+      crossorigin="anonymous"    
+
+
+    ></script>
+    <script src="indx.js"></script>
+  </head>
+  <body>
+    <h1>Company Name</h1>
+    <div class="row">
+      <div class="date" id="dt">Date</div>
+      <div class="time" id="tm">Time</div>
+      <div class="username1" id="uname">welcome <span id ="user"> </span></div>
+    </div>
+    <div class="buyer" id="purchaser">Buyer's List</div>
+    <script>  
+    
+    function getQueryParameter(name){
+      const urlPattern=new URLSearchParams(window.location.search);
+      return urlParams.get(name);   
+    }
+
+    const username=getQueryParameter(username);
+    document.getElementById('user').innerText=username||'Guest';
+
+  </script>
+ 
+  </body>
+</html>
